@@ -6,7 +6,7 @@ export interface AuthState {
 }
 
 const initialState: AuthState = {
-  token: "hello",
+  token: "",
 };
 
 export const authSlice = createSlice({

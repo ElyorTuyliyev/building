@@ -1,13 +1,11 @@
 import { Button } from "@mui/material";
 import { useDispatch } from "react-redux";
-import { setToken } from "../../../store/slice/auth";
+import { setToken } from "../../../store/slices/auth";
 
-type Props = {};
-
-const SignIn = (props: Props) => {
+const SignIn = () => {
   const dispatch = useDispatch();
 
-  const handleSignIn = () => dispatch(setToken("hello"));
+  const handleSignIn = () => dispatch(setToken("lsjrnldirhvsdirdv"));
 
   return (
     <Button variant="contained" onClick={handleSignIn}>

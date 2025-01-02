@@ -21,7 +21,7 @@ function App() {
     <Box>
       <Routes>
         {ROUTES.map((route) => (
-          <Route key={route.path} path={route.path} element={route.component} />
+          <Route path={route.path} element={route.component} />
         ))}
       </Routes>
     </Box>

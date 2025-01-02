@@ -1,10 +1,5 @@
-import { Button } from "@mui/material";
-import React from "react";
-
-type Props = {};
-
-const NotFound = (props: Props) => {
-  return <div>NotFound</div>;
+const NotFound = () => {
+  return <div>Page Not Found</div>;
 };
 
 export default NotFound;

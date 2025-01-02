@@ -7,6 +7,7 @@ function App() {
   const token = useSelector(
     (state: { auth: { token: string } }) => state.auth.token
   );
+
   if (!token) {
     return (
       <Routes>

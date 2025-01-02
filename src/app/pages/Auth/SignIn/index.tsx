@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { setToken } from "../../../store/slices/auth";
 
@@ -8,9 +8,12 @@ const SignIn = () => {
   const handleSignIn = () => dispatch(setToken("lsjrnldirhvsdirdv"));
 
   return (
-    <Button variant="contained" onClick={handleSignIn}>
-      SignIn
-    </Button>
+    <div>
+      <Typography>Sign in</Typography>
+      <Button variant="contained" onClick={handleSignIn}>
+        SignIn
+      </Button>
+    </div>
   );
 };
 
